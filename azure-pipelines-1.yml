@@ -11,6 +11,9 @@ pool:
 
 steps:
 - script: echo Hello,welcome to Chikku world!
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
   displayName: 'Run a one-line script'
 
 - script: |
